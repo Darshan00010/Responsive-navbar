@@ -1,0 +1,115 @@
+@import url("https://fonts.googleapis.com/css2?family=Libre+Baskerville&family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Work+Sans:wght@400;500;600;700&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Work Sans", sans-serif;
+}
+
+html{
+   font-size: 62.5%;
+   overflow-x: hidden;
+}
+
+.logo{
+    width:20rem ;
+    height: 6rem;
+}
+.header {
+    padding: 0 4.8rem;
+    height: 10rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #e7f5ff;
+  }
+
+  .navbar-list{
+    display: flex;
+    gap: 4rem;
+    list-style: none;
+  }
+  /* now target the list */
+  .navbar-link:link,.navbar-link:visited{
+    text-decoration: none;
+    text-transform: uppercase;
+    display: inline-block;
+    font-size: 1.5rem;
+    font-weight: 500;
+    color: #212529;
+    transition: all 0.3s;
+  }
+  .navbar-link:hover,
+  .navbar-link:active {
+  color: purple
+}
+
+.mobile-nav-icon{
+    width: 4rem;
+    height: 4rem;
+}
+.mobile-nav-icon{
+    background: transparent;
+    display: none;
+    cursor: pointer;
+}
+
+.mobile-nav-icon[name="close-outline"] {
+    display: none;
+  }
+
+
+/* header-------------------- */
+/* section-services */
+.section-hero{
+    width: 205rem;
+    height: 40rem;
+    background: purple;
+    
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+/* here u can see section is parent element apply flex and align its items 
+   div to center  */
+.section-services{
+    width: 205rem;
+    height: 45rem;
+    background: orange;
+    
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+p{
+    font-size: 3rem;
+    color: wheat;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+ @media (max-width:727px){
+  .navbar{
+    display: none;
+  }
+  .mobile-nav-icon{
+    display: block;
+    z-index: 999;
+    border: 3px solid black;
+    background-color: gray;
+    cursor: pointer;
+  }
+  
+
+
+ } 
