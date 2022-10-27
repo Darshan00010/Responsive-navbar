@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-size: 62.25%;
+      }
+      .page {
+        background-color: burlywood;
+        width: 100%;
+        height: 100vh;
+      }
+      .navbar {
+        width: 85%;
+        margin: auto;
+        padding: 35px 0;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+      }
+      img {
+        width: 20rem;
+        height: 6rem;
+      }
+      .navbar ul li {
+        position: relative;
+        list-style: none;
+        display: inline-block;
+        margin: 0 20px;
+        text-transform: uppercase;
+        color: black;
+        font-size: large;
+      }
+      .navbar ul li::after {
+        position: absolute;
+        width: 0;
+        content: "";
+        height: 3px;
+        background-color: aqua;
+        left: 0;
+        bottom: -10px;
+        transition: all 0.5s ease;
+      }
+      .navbar ul li:hover:after {
+        width: 100%;
+      }
+      .mbnav{
+        display: none;
+      }
+      @media (max-width: 620px) {
+       .mbnav{
+        display:block;
+       }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="page">
+      <div class="navbar">
+        <img src="./Darshan-logo.png" alt="" />
+        <ul class="nav">
+          <li><a href="#"></a>Home</li>
+          <li><a href="#"></a>blog</li>
+          <li><a href="#"></a>about us</li>
+          <li><a href="#"></a>contact</li>
+        </ul>
+          
+        <ul class="mbnav">
+          <li><a href="#"></a>Home</li>
+          <li><a href="#"></a>blog</li>
+          <li><a href="#"></a>about us</li>
+          <li><a href="#"></a>contact</li>
+        </ul>
+      </div>
+    </div>
+  </body>
+</html>
